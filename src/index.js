@@ -56,7 +56,6 @@ function game() {
         var gameResults = playRound(playerSelection, computerSelection);
         computerResult+=gameResults.computerScore;
         playerResult+=gameResults.playerScore
-        console.log(computerResult);
     }
     console.log(computerResult, playerResult);
 }
