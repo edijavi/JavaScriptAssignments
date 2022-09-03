@@ -35,7 +35,7 @@ function playRound(playerSelection, computerSelection) {
     }
   }
   console.log(result);
-  console.log(playerScore, computerScore);
+  console.log(`Current Result: You: ${playerScore}, Computer${computerScore}`);
 }
 // const playerSelection = 'paper';
 // const computerSelection = computerPlay();
@@ -50,7 +50,7 @@ function game() {
         playerSelection = playerSelection.toLowerCase();
         computerSelection = computerSelection.toLowerCase();
         if (playerSelection != "rock" && playerSelection != "paper" && playerSelection != "scissors") {
-            alert("Invalid input"), i--
+            alert("Invalid input"), index--
           } else{
             console.log(`You: ${playerSelection}, Computer: ${computerSelection}`);
             playRound(playerSelection, computerSelection);
