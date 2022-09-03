@@ -4,11 +4,9 @@ function computerPlay() {
     computerOptions[Math.floor(Math.random() * computerOptions.length)];
   return computerSelection;
 }
-
+var playerScore=0, computerScore=0;
 function playRound(playerSelection, computerSelection) {
-  var result, playerScore=0, computerScore=0;
-  playerSelection = playerSelection.toLowerCase();
-  computerSelection = computerSelection.toLowerCase();
+  let result;
   if (playerSelection === computerSelection) {
     result = `Tie ${computerSelection} equal to ${playerSelection}`;
   } else if (playerSelection === "rock") {
@@ -38,7 +36,6 @@ function playRound(playerSelection, computerSelection) {
   }
   console.log(result);
   console.log(playerScore, computerScore);
-  return (playerScore, computerScore);
 }
 // const playerSelection = 'paper';
 // const computerSelection = computerPlay();
@@ -46,18 +43,25 @@ function playRound(playerSelection, computerSelection) {
 // console.log(playRound(playerSelection, computerSelection));
 
 function game() {
-    let rounds = 5
-    let computerResult = 0, playerResult = 0;
-    
+    let rounds = 5;
     for (let index = 0; index < rounds; index++) {
         var playerSelection = prompt("What's your selection?");
         var computerSelection = computerPlay();
-        console.log(playerSelection, computerSelection);
-        var gameResults = playRound(playerSelection, computerSelection);
-        computerResult+=gameResults.computerScore;
-        playerResult+=gameResults.playerScore
+        playerSelection = playerSelection.toLowerCase();
+        computerSelection = computerSelection.toLowerCase();
+        if (playerSelection != "rock" && playerSelection != "paper" && playerSelection != "scissors") {
+            alert("Invalid input"), i--
+          } else{
+            console.log(`You: ${playerSelection}, Computer: ${computerSelection}`);
+            playRound(playerSelection, computerSelection);
+          }
+        
     }
-    console.log(computerResult, playerResult);
+    if (playerScore > computerScore) {
+        console.log(`Winner!!! You Rocket ${playerScore}-${computerScore}`);
+    }else{
+        console.log(`Computer kick your ass! ${computerScore}-${playerScore}`);
+    }
 }
 game();
 
