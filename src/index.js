@@ -59,7 +59,9 @@ function game() {
     }
     if (playerScore > computerScore) {
         console.log(`Winner!!! You Rocket ${playerScore}-${computerScore}`);
-    }else{
+    }else if (playerScore===computerScore) {
+        console.log(`It is a Tie!!! ${playerScore}-${computerScore}`);
+    }else {
         console.log(`Computer kick your ass! ${computerScore}-${playerScore}`);
     }
 }
