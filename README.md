@@ -22,11 +22,11 @@ JavaScript Assignments
     ![](Aspose.Words.4d8dc2a3-6fcb-4cae-b661-4f05561c5209.001.png)
 
     5) Write a NEW function called **game()**. Call the **playRound** function *inside* of this one to play a 5 round game that keeps score and reports a winner or loser at the end.
-        1. [Remember loops?](https://www.youtube.com/watch?v=s9wW2PpJsmQ&ab_channel=ProgrammingwithMosh) This is a great opportunity to use one to play those five rounds:
+    1. [Remember loops?](https://www.youtube.com/watch?v=s9wW2PpJsmQ&ab_channel=ProgrammingwithMosh) This is a great opportunity to use one to play those five rounds:
 
     ![](Aspose.Words.4d8dc2a3-6fcb-4cae-b661-4f05561c5209.002.png)
 
-        2. At this point you should be using console.log() to display the results of each round and the winner at the end.
-        3. Use **prompt()** to get input from the user. [Read the docs here.](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
-        4. Feel free to re-work your previous functions if you need to. Specifically, you might want to change the return value to something more useful.
-        5. Feel free to re-work your previous functions if you need to. Specifically, you might want to change the return value to something more useful.
+    2. At this point you should be using console.log() to display the results of each round and the winner at the end.
+    3. Use **prompt()** to get input from the user. [Read the docs here.](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
+    4. Feel free to re-work your previous functions if you need to. Specifically, you might want to change the return value to something more useful.
+    5. Feel free to re-work your previous functions if you need to. Specifically, you might want to change the return value to something more useful.
